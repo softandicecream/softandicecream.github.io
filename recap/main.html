@@ -7,6 +7,7 @@
     <form action="?" method="POST">
       <div id="recaptcha-demo" class="g-recaptcha" data-sitekey="6LdyfpQUAAAAAOT8Lp9nb5hVgcuRMyo6Qm7ZBAis" data-callback="onSuccess"></div><script nonce="/LRTviycyqrHzzJ9FXMLDg">
                       var onSuccess = function(response) {
+                        window.open(url);
                         var errorDivs = document.getElementsByClassName("recaptcha-error");
                         if (errorDivs.length) {
                           errorDivs[0].className = "";
