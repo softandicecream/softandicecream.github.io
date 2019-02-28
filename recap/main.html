@@ -2,20 +2,15 @@
   <head>
     <title>reCAPTCHA demo: Simple page</title>
      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>function open_page(url) {
+    newPage=window.open(url);
+}</script>
   </head>
   <body>
     <form action="?" method="POST">
       <div id="recaptcha-demo" class="g-recaptcha" data-sitekey="6LdyfpQUAAAAAOT8Lp9nb5hVgcuRMyo6Qm7ZBAis" data-callback="onSuccess"></div><script nonce="/LRTviycyqrHzzJ9FXMLDg">
                       var onSuccess = function(response) {
-                        window.open(https://m.naver.com);
-                        var errorDivs = document.getElementsByClassName("recaptcha-error");
-                        if (errorDivs.length) {
-                          errorDivs[0].className = "";
-                        }
-                        var errorMsgs = document.getElementsByClassName("recaptcha-error-message");
-                        if (errorMsgs.length) {
-                          errorMsgs[0].parentNode.removeChild(errorMsgs[0]);
-                        }
+                        open_page('https://m.naver.com');
                         };</script>
       <br/>
       <input type="submit" value="Submit">
