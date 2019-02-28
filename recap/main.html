@@ -5,7 +5,17 @@
   </head>
   <body>
     <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LdyfpQUAAAAAOT8Lp9nb5hVgcuRMyo6Qm7ZBAis"></div>
+      <div id="recaptcha-demo" class="g-recaptcha" data-sitekey="6LdyfpQUAAAAAOT8Lp9nb5hVgcuRMyo6Qm7ZBAis" data-callback="onSuccess"></div><script nonce="/LRTviycyqrHzzJ9FXMLDg">
+                      var onSuccess = function(response) {
+                        var errorDivs = document.getElementsByClassName("recaptcha-error");
+                        if (errorDivs.length) {
+                          errorDivs[0].className = "";
+                        }
+                        var errorMsgs = document.getElementsByClassName("recaptcha-error-message");
+                        if (errorMsgs.length) {
+                          errorMsgs[0].parentNode.removeChild(errorMsgs[0]);
+                        }
+                        };</script>
       <br/>
       <input type="submit" value="Submit">
     </form>
