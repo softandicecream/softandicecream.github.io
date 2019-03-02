@@ -1,6 +1,14 @@
 <html>
   <head>
     <title>recaptcha v3 testing</title>
+      <script src="https://www.google.com/recaptcha/api.js?render=6LdI9pQUAAAAACGmf-abd2i8-u9zXHiiJ6pNcfsb"></script>
+  <script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('6LdI9pQUAAAAACGmf-abd2i8-u9zXHiiJ6pNcfsb', {action: 'homepage'}).then(function(token) {
+         ...
+      });
+  });
+  </script>
   </head>
   <body>
   </body>
