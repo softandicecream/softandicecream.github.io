@@ -1,6 +1,22 @@
 <html>
-<head>
-</head>
-<body>
-</body>
+  <head>
+    <title>youtube downloader</title>
+    
+  </head>
+  <body>
+   <script>
+     var express = require('express');
+     var link = "";
+     var app = express();
+     app.get(function (req, res) {
+   var api_url = 'http://hapi.kro.kr/youtube/get.php';
+   var request = require('request');
+       var options = {
+       url: api_url,
+       headers: {'url':link}
+    };
+   request.post(options, function (error, response, body) {
+     }
+    </script>
+  </body>
 </html>
