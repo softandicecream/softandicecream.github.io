@@ -1,5 +1,9 @@
 <html>
 <head>
+  <script type="text/javascript">
+    window.onload = function() { var header = document.getElementById('down');
+                                header.onclick = function() { alert('클릭'); // 이벤트를 제거, 한번만 실행이 됨 header.onclick = null; } };
+  </script>
 <!--<script src="browser.js"></script>-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -11,7 +15,7 @@
 <div class="mdc-card" style="padding:8px">
 <h2 class="demo-card__title mdc-typography mdc-typography--headline6">무선 PPT 리모컨</h2>
   <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">소프트와 아이스크림이 만든 무선 ppt 리모컨입니다!</h3>
-  <button class="mdc-button mdc-card__action mdc-card__action--button" onclick="parent.location.href = "https://m.naver.com";">
+  <button class="mdc-button mdc-card__action mdc-card__action--button" id="down">
     <span style="padding:8px">컴퓨터 프로그램 다운로드</span>
     </button>
 </div>
